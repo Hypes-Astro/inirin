@@ -27,7 +27,9 @@ Route::get('/mahasiswas', [MahasiswaController::class, 'index']);
 Route::get('/dosens', [DosenController::class, 'index']);
 Route::get('/kelas', [KelasController::class, 'index']);
 
-// Ini untuk export
+// Ini untuk export - 
+
+// uri ini nanti di tarok di <a>
 Route::get('/export-mahasiswas', function () {
     return Excel::download(new MahasiswaExport, 'mahasiswas.xlsx');
 });

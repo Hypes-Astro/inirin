@@ -27,6 +27,8 @@
                         <td>{{ $mahasiswa->tahun_masuk }}</td>
                     </tr>
                 @endforeach
+
+                {{-- disini untuk implement yang dari route --}}
                 <a href="/export-mahasiswas" class="btn btn-success my-3">Export Excel Mahasiswa</a>
 
             </tbody>
